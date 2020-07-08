@@ -1,0 +1,36 @@
+/*  Etiqueta              -> 1
+    Clases y pseudoclases -> 10
+    Id                    -> 100
+    Estilos en línea      -> 1000
+    !important            -> Gana a todo;
+    
+    ? important -> especificidad -> cascada
+
+    !LA ESPECIFIDAD GANA A LA CASCADA
+    !LA CASCADA ENTRA EN JUEGO CUANDO LA ESPECIFIDAD ES LA MISMA
+    !LA CASCADA ES LA ULTIMA QUE SE ESTA APLICANDO
+*/
+
+p {
+    color: yellow;
+}
+
+#parrafo {
+    color: blueviolet;
+}
+
+.parrafo-2 {
+    color: black;
+}
+
+.parrafo {
+    color: red;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    color: green;
+}

@@ -1,0 +1,75 @@
+/*
+flex-direction: row,elegimos como se ordena col y fila
+flex-wrap: nowrap;  hace que los elementos "salten de linea" y conserven sus tamaños 
+justify-content: nos alinea el contenido (segun flex-direction)
+align-items: strech,  para alinear en la direccion secundaria (cuando hay una sola linea)
+(si son varias, cada fila hace que tenga el mismo espacio, como si se le aplicara strech)
+align-conten: cuando hay varias fila posiciona los elementos en la direccion secundaria 
+WRAP-REVERSE ES INTERESANTE
+los margin: se van al lado contrario con AUTO
+*/
+
+.item1 {
+    background: yellow;
+    text-align: center;
+    color: black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 40px;
+}
+.item2 {
+    background: yellow;
+    text-align: center;
+    color: black;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.contenedor1 {
+    height: 700px;
+    background: #333333;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    /* align-items: stretch; */
+}
+.contenedor2 {
+    height: 700px;
+    background: #333333;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    /* align-items: stretch; */
+}
+
+.flex-container {
+    background-color: #fca17d;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: auto;
+    /* margin-right: auto; */
+    margin-top: auto;
+    /* margin: auto; */
+    color: aliceblue;
+    background-color: #9a348e;
+    text-align: center;
+    line-height: 50px;
+}

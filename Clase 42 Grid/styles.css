@@ -1,0 +1,41 @@
+/* 
+    display: grid;
+    grid-template-columns: define el tamaño de cada columna;
+    grid-template-rows: define el tamaño de cada fila; 
+    grid-column-gap: define el espacio entre cada columna;
+    grid-row-gap: define el espacio entre cada fila;
+*/
+h2 {
+    border: 1px solid black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    margin: 0;
+    height: 100vh;
+    color: #eee;
+    font-family: sans-serif;
+    background-image: radial-gradient(circle, #b94bf8, #3a1957);
+    background-repeat: no-repeat;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 50px 150px min-content;
+    grid-template-rows: 100px 150px 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.grid-item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
